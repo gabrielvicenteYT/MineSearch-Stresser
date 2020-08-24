@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!-- Author: Oxycontin -->
+<!-- Github: https://github.com/Mxrtis -->
+  <head>
+    <meta charset="utf-8">
+    <title>FakeStress | Free Stresser</title>
+    <style media="screen">
+      @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+      body{
+        padding-top: 10px;
+        background-color: #3e1577;
+        background-image: radial-gradient(circle at center, transparent 1px, #1b0836 1px);
+        background-position: -5px -5px;
+        background-size: 12px 12px;
+      }
+
+      .main {
+        border-radius: 10px;
+        padding-top: 5px;
+        background: #3e1577;
+        width: 50%;
+        margin: 0 auto;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        text-align:  center;
+      }
+
+      .main h1 {
+        font-size: 33px;
+      }
+
+      .main hr {
+        padding-top: 0px;
+        margin-top: 0px;
+        width: 75%;
+        border-style: solid;
+        border-color: white;
+      }
+
+      input[type=text], select {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      .sub {
+        width: 52%;
+        background-color: #1b0836;
+        color: white;
+        padding: 14px 20px;
+        margin: 35px 0 40px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+
+      .succ {
+        border-radius: 10px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        background: #52dd7e;
+        width: 20%;
+        margin: 0 auto;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        text-align: center;
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Fake Stresser</h1>
+      <hr/>
+      <br/>
+      <form>
+        <label for="fname">Host</label>
+        <br>
+        <input type="text" id="fname" name="firstname" placeholder="1.1.1.1:80">
+        <br>
+        <label for="country">Method</label>
+        <br>
+        <select id="method" name="method">
+          <option value="NTP">NTP</option>
+          <option value="UDP">UDP</option>
+          <option value="STD">STD</option>
+          <option value="ALL">ALL</option>
+          <option value="SYN">SYN</option>
+          <option value="ACK">ACK</option>
+          <option value="GRE">GRE</option>
+          <option value="OVH">OVH</option>
+        </select>
+        <br>
+      </form>
+      <button onclick="document.getElementById('succ').style.visibility = 'visible'; " class="sub">Send Attack</button>
+    </div>
+    <br>
+    <div id="succ" class="succ">
+      <p>Success! Attack sent.</p>
+    </div>
+  </body>
+  <!-- Author: Oxycontin -->
+  <!-- Github: https://github.com/Mxrtis -->
+</html>
