@@ -103,7 +103,13 @@
         </select>
         <br>
       </form>
-      <button onclick="await delay(5000);document.getElementById('succ').style.visibility = 'visible'; " class="sub">Send Attack</button>
+      <button onclick="document.getElementById('succ').style.visibility = 'visible'; " class="sub">Send Attack</button>
+      <script>
+          content.style.display="none";
+  setTimeout(function(){
+    content.style.display="block";
+  }, 5000);
+      </script>
     </div>
     <br>
     <div id="succ" class="succ">
