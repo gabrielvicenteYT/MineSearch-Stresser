@@ -1,8 +1,8 @@
-# FakeStresser
-A lightweight fake web stresser built in a single HTML file! Perfect for driving skids to your site.
+# Minesearch Stresser
+A lightweight real web stresser built in a single PHP file! Perfect for making wifi go juice wrld!
 
-### Demo
-Check out the demo https://0xkyoto.github.io/stress.html
+### !!!!
+veri good dos tool!!!!!!
 
 ### Installation
 1. Literally just paste the HTML file into your public HTML folder.
